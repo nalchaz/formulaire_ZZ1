@@ -20,16 +20,60 @@ body
 	font-style : 'FontAwesome' ;
 }
 
+.textEntry{
+	width: 100%;
+}
+
 #mainContainer
 {
 	width: 50%; 	/* largeur du bloc à 50% de la résolution de l'écran */
 	margin: auto;   /* marge exterieure auto ie bloc centré */
-	padding: 25px 5px 60px 5px ; /* marges intérieures : haut droite bas gauche */
+	padding: 20px 40px 60px 40px ; /* marges intérieures : haut droite bas gauche */
 	background-color: white;
+	border-radius: 10px;
 }
 
-
+/* .coteAcote{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+*/
 h1
 {
 	text-align: center ;
 }
+
+
+
+.textEntry, textarea, select {
+	background-color: #F7F7F7;
+	padding: 15px;
+	border: 1px solid #E6E6E6;
+	border-radius:5px;
+	margin: 4px;
+ }
+
+input {
+	border: hidden;
+	background-color: #F7F7F7;
+}
+
+ #fullNameEntry
+ {
+ 	width: 100%;
+ }
+
+#emailEntry, #phoneEntry 
+{
+	width: 50%;
+}
+
+#champ_email, #champ_phone 
+{
+	display: inline;
+}
+
+ .textEntry{
+ 	margin: 4px;
+ }
