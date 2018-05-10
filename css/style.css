@@ -43,7 +43,7 @@ h1{
 	padding: 15px;
 	border: 1px solid #E6E6E6;
 	border-radius:5px;
-	margin: 4px;
+	margin: 10px 0px 15px 0px;
  }
 
 #mainContainer{
@@ -64,12 +64,12 @@ input {
  	width: 100%;
  }
 
-#emailEntry, #phoneEntry 
-{
-	width: 50%;
+#champ_email, #champ_phone 
+{	
+	display: inline-block;
 }
 
-#champ_email, #champ_phone 
-{
-	display: inline;
+#champ_phone{
+	float :right;
 }
+
