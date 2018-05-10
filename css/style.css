@@ -1,3 +1,19 @@
-h1{
-	color: blue;
+body
+{
+	background-color: #E6E6E6;
+	font-style : 'FontAwesome' ;
+}
+
+#mainContainer
+{
+	width: 50%; 	/* largeur du bloc à 50% de la résolution de l'écran */
+	margin: auto;   /* marge exterieure auto ie bloc centré */
+	padding: 25px 5px 60px 5px ; /* marges intérieures : haut droite bas gauche */
+	background-color: white;
+}
+
+
+h1
+{
+	text-align: center ;
 }
