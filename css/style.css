@@ -17,7 +17,25 @@
 body
 {
 	background-color: #E6E6E6;
-	font-style : 'FontAwesome' ;
+	font-family: "Montserrat-Medium" ;
+}
+
+footer
+{
+	text-align: center ;
+}
+
+footer table{
+	margin: auto;
+}
+
+h1{
+	font-family: "Montserrat-Black";
+	text-align: center ;
+}
+
+.semiBold{
+	font-family: "Montserrat-SemiBold";
 }
 
 #mainContainer
@@ -29,7 +47,3 @@ body
 }
 
 
-h1
-{
-	text-align: center ;
-}
