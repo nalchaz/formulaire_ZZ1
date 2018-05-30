@@ -1,23 +1,30 @@
 @font-face {
-  font-family: Montserrat-Black;
-  src: url('../fonts/montserrat/Montserrat-Black.ttf'); 
+  font-family: "Montserrat-Black";
+  src:  local("Georgia"),
+  		url("../fonts/montserrat/Montserrat-Black.woff2") format('woff2'),
+  		url("../fonts/montserrat/Montserrat-Black.woff") format('woff');
+  	}
+
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: 	url("../fonts/montserrat/Montserrat-Semibold.woff2") format('woff2'),
+  		url("../fonts/montserrat/Montserrat-Semibold.woff") format('woff'); 
 }
 
 @font-face {
-  font-family: Montserrat-SemiBold;
-  src: url('../fonts/montserrat/Montserrat-SemiBold.ttf'); 
-}
+  font-family: "Montserrat-Medium";
+  src:  local("Tahoma"),
+  		url("../fonts/montserrat/Montserrat-Medium.ttf") format("opentype"),
+  		url("../fonts/montserrat/Montserrat-Medium.woff2") format('woff2'),
+  		url("../fonts/montserrat/Montserrat-Medium.woff") format('woff');
 
-@font-face {
-  font-family: Montserrat-Medium;
-  src: url('../fonts/montserrat/Montserrat-Medium.ttf'); 
 }
 
 
 body
 {
 	background-color: #E6E6E6;
-	font-family: "Montserrat-Medium" ;
+	font-family: "Montserrat-Medium";
 }
 
 footer
@@ -38,12 +45,17 @@ h1{
 	font-family: "Montserrat-SemiBold";
 }
 
-.entry, textarea, select {
+.entry, select {
 	background-color: #F7F7F7;
 	padding: 15px;
 	border: 1px solid #E6E6E6;
-	border-radius:5px;
+	border-radius:15px;
 	margin: 10px 0px 15px 0px;
+ }
+
+ .labelChamp{
+ 	font-size: 11px;
+ 	font-weight: bold;
  }
 
 #mainContainer{
@@ -59,17 +71,44 @@ input {
 	background-color: #F7F7F7;
 }
 
+textarea {
+	background-color: white;
+	padding: 15px;
+	border: none;
+	margin: 10px 0px 15px 0px;
+}
+
+input::placeholder {
+	font-size: 20px;
+	font-family: Tahoma;
+	color: #ACACAC;
+}
+
  #fullNameEntry
  {
+ 	Line-Height: 22pt;
  	width: 100%;
  }
 
 #champ_email, #champ_phone 
 {	
+	Line-Height: 22pt;
 	display: inline-block;
+	width:44%;
 }
+
 
 #champ_phone{
 	float :right;
 }
+
+/* CA MARCHE PAS !!!!!!!!!! */
+#champ_message{
+	background-color: white;
+	padding: 15px;
+	border: 1px solid #E6E6E6;
+	margin: 10px 0px 15px 0px;
+}
+
+
 
