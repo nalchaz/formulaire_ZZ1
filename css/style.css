@@ -108,7 +108,24 @@ input::placeholder {
 	padding: 15px;
 	border: 1px solid #E6E6E6;
 	margin: 10px 0px 15px 0px;
+	border-radius:15px;
 }
 
+.submitArea{
+	border: none;
+	padding: 15px 70px 15px 70px;
+	background-color: #333333;
+	color : white;
+	border-radius: 20px;
+	width : 100%;
 
+	box-shadow: 0 200px 100px -100px #333333 inset; /* On joue sur l'ombre pour le dégradé au survol */
+    transition: box-shadow 0.4s;
+}
+
+.submitArea:hover{
+	background-color: #00AD5F;
+
+	box-shadow: 0 200px 100px -100px #00AD5F inset;
+}
 
