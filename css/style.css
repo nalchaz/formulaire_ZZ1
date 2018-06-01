@@ -21,19 +21,26 @@
 }
 
 
+
+
 body
 {
 	background-color: #E6E6E6;
-	font-family: "Montserrat-Medium";
+	font-family: "Arial";
 }
 
 footer
 {
+	font-size: 8px;
 	text-align: center ;
 }
 
 footer table{
 	margin: auto;
+}
+
+footer td{
+	padding: 0px 10px 0px 0px ; /* marges intérieures : haut droite bas gauche */
 }
 
 h1{
@@ -78,21 +85,31 @@ textarea {
 	margin: 10px 0px 15px 0px;
 }
 
+#servicesEntry{
+	font-family: Arial;
+}
+textarea::placeholder{
+	font-family: Arial;
+	width: 100%;
+}
+
 input::placeholder {
-	font-size: 20px;
-	font-family: Tahoma;
+	font-size: 16px;
+	font-family: Arial;
 	color: #ACACAC;
 }
 
- #fullNameEntry
+ #nomEntry
  {
- 	Line-Height: 22pt;
  	width: 100%;
+ }
+
+ #nomEntry, #emailEntry, #phoneEntry {
+	Line-Height: 25pt;
  }
 
 #champ_email, #champ_phone 
 {	
-	Line-Height: 22pt;
 	display: inline-block;
 	width:44%;
 }
@@ -102,7 +119,7 @@ input::placeholder {
 	float :right;
 }
 
-/* CA MARCHE PAS !!!!!!!!!! */
+
 #champ_message{
 	background-color: white;
 	padding: 15px;

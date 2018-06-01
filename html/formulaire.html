@@ -4,46 +4,52 @@
     	<!-- En-tête de la page -->
         <meta charset="utf-8" />
         <link rel="stylesheet" type="text/css" href="../css/style.css">
-        <title> Contact Us </title>
+        <title> Contact </title>
 
     </head>
 
 
     <body>
         <div id="mainContainer">
-        	<h1>Contact Us</h1>
+        	<h1>Nous contacter</h1>
 
-            <!-- Full name -->
+            <!-- Nom -->
             <div class="entry">
-                <span id="fullNameLabel" class="labelChamp">FULL NAME</span>
-                <input class="semiBold" id="fullNameEntry" type="text" placeholder="Enter Your Name">
+                <span id="nomLabel" class="labelChamp">NOM</span>
+                <input class="semiBold" id="nomEntry" type="text" placeholder="Entrez votre nom" size="30">
             </div>
 
             <div id="line2">
             <!-- Email -->
             <div class="entry" id="champ_email">
-                <span id="emailLabel" class="labelChamp">EMAIL</span>
+                <span id="emailLabel" class="labelChamp">E-MAIL</span>
                 <br/>
-                <input class="semiBold" id="emailEntry" type="text" placeholder="Enter Your Email" size="30">
+                <input class="semiBold" id="emailEntry" type="text" placeholder="Entrez votre e-mail" size="30">
             </div>
 
             <!-- Phone -->
             <div class="entry" id="champ_phone">
-                <span id="phoneLabel" class="labelChamp">PHONE</span>
+                <span id="phoneLabel" class="labelChamp">TELEPHONE</span>
                 <br/>
-                <input class="semiBold" id="phoneEntry" type="text" placeholder="Enter Number Phone" size="30">
+                <input class="semiBold" id="phoneEntry" type="text" placeholder="Entrez votre numéro de téléphone" size="50">
             </div>
             </div>
 
             <!-- Needed services -->
             <div class="entry">
-                <span id="servicesLabel" class="labelChamp">NEEDED SERVICES</span>
+                <span id="servicesLabel" class="labelChamp">CATEGORIE SOCIOPROFESSIONNELLE</span>
                 <br/>
                 <select class="semiBold" id="servicesEntry">
-                    <option>Please Select</option>
-                    <option>Choice 1</option>
-                    <option>Choice 2</option>
-                    <option>Choice 3</option>
+                    <option>Sélectionnez le groupe auquel vous appartenez</option>
+                    <option>Agriculteurs exploitants</option>
+                    <option>Artisans, commerçants, chefs d'entreprises</option>
+                    <option>Cadres et professions intellectuelles supérieures</option>
+                    <option>Professions intermédiaires</option>
+                    <option>Employés</option>
+                    <option>Ouvriers</option>
+                    <option>Retraités</option>
+                    <option>Ouvriers</option>
+                    <option>Sans activité</option>
                 </select>
             </div>
 
@@ -51,19 +57,19 @@
             <div id ="champ_message">
                 <span id="messageLabel" class="labelChamp">MESSAGE</span>
                 <br/>
-                <textarea class="semiBold" id="messageEntry" placeholder="Your message here..."></textarea>
+                <textarea class="semiBold" id="messageEntry" cols="100" rows="3" placeholder="Tapez votre message ici... !"></textarea>
             </div>
 
             <!-- Button -->
             <div class="submitArea2">
-                <button id="submitButton" class="submitArea">Submit →</span>
+                <button id="submitButton" class="submitArea">Envoyer →</span>
             </div>
 
 
         </div>
 
         <footer> <!-- Pied de page -->
-            <br/><br/>
+            <br/>
             <table> 
                 <tr> <!-- Début 1ere ligne -->
                     <td> CHAZOT </td>
