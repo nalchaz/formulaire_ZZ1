@@ -43,10 +43,6 @@ footer td{
 	padding: 0px 10px 0px 0px ; /* marges intérieures : haut droite bas gauche */
 }
 
-h1{
-	font-family: "Montserrat-Black";
-	text-align: center ;
-}
 
 .semiBold{
 	font-family: "Montserrat-SemiBold";
@@ -61,8 +57,9 @@ h1{
  }
 
  .labelChamp{
- 	font-size: 11px;
+ 	font-size: 13px;
  	font-weight: bold;
+ 	text-shadow: 0px 2px 1px #C3C3C3;
  }
 
 #mainContainer{
@@ -78,6 +75,18 @@ input {
 	background-color: #F7F7F7;
 }
 
+input[type=text], #messageEntry {
+	font-size: 14px;
+	font-family: Tahoma;
+ }
+
+ input::placeholder, textarea::placeholder {
+	font-size: 16px;
+	font-family: Arial;
+	color: #ACACAC;
+}
+
+
 textarea {
 	background-color: white;
 	padding: 15px;
@@ -85,19 +94,15 @@ textarea {
 	margin: 10px 0px 15px 0px;
 }
 
-#servicesEntry{
-	font-family: Arial;
-}
 textarea::placeholder{
-	font-family: Arial;
 	width: 100%;
 }
 
-input::placeholder {
-	font-size: 16px;
+
+#catEntry{
 	font-family: Arial;
-	color: #ACACAC;
 }
+
 
  #nomEntry
  {
@@ -142,7 +147,26 @@ input::placeholder {
 
 .submitArea:hover{
 	background-color: #00AD5F;
-
 	box-shadow: 0 200px 100px -100px #00AD5F inset;
 }
 
+
+.hiddenMessage{
+	font-size: 14px;
+}
+
+.OK, .NOTOK{
+	font-size: 14px;
+}
+
+.OK{
+	color: green;
+}
+
+.NOTOK, .hiddenMessage{
+	color: red;
+}
+
+#messageCat{
+	color: red;
+}
