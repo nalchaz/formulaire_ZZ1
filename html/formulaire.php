@@ -1,20 +1,17 @@
 <html>
-
     <head>
     	<!-- En-tête de la page -->
         <meta charset="utf-8" />
         <link rel="stylesheet" type="text/css" href="../css/style.css">
         <title> Contact </title>
-
     </head>
-
 
     <body>
         <div id="mainContainer">
         	<center><img src="../images/NousContacter.png" alt="Nous contacter"/></center>
             <p class="hiddenMessage" id="messageFormulaire">Des champs sont invalides</p>
 
-        <form id="formulaire" onsubmit="return Envoi()" method="post">
+        <form id="formulaire" onsubmit="return Envoi()" method="post" action="envoi.php">
             <!-- Nom -->
             <div class="entry">
                 <span id="nomLabel" class="labelChamp">NOM</span>
@@ -50,17 +47,17 @@
             <div class="entry">
                 <span id="catLabel" class="labelChamp">CATEGORIE SOCIOPROFESSIONNELLE</span>
                 <br/>
-                <select class="semiBold" id="catEntry" onchange="checkCat()">
+                <select class="semiBold" id="catEntry" onchange="checkCat()" name="Categorie">
                     <option value="0">Sélectionnez le groupe auquel vous appartenez</option>
-                    <option value="1">Agriculteurs exploitants</option>
-                    <option value="2">Artisans, commerçants, chefs d'entreprises</option>
-                    <option value="3">Cadres et professions intellectuelles supérieures</option>
-                    <option value="4">Professions intermédiaires</option>
-                    <option value="5">Employés</option>
-                    <option value="6">Ouvriers</option>
-                    <option value="7">Retraités</option>
-                    <option value="8">Ouvriers</option>
-                    <option value="9">Sans activité</option>
+                    <option value="1">1. Agriculteurs exploitants</option>
+                    <option value="2">2. Artisans, commerçants, chefs d'entreprises</option>
+                    <option value="3">3. Cadres et professions intellectuelles supérieures</option>
+                    <option value="4">4. Professions intermédiaires</option>
+                    <option value="5">5. Employés</option>
+                    <option value="6">6. Ouvriers</option>
+                    <option value="7">7. Retraités</option>
+                    <option value="8">8. Ouvriers</option>
+                    <option value="9">9. Sans activité</option>
                 </select>
                 <div class="hiddenMessage" id="messageCat"> 
                 Vous devez sélectionner votre catégorie socioprofessionnelle
@@ -79,7 +76,7 @@
 
             <!-- Button -->
             <div class="submitArea2">
-                <input type="submit" value="Envoyer →" id="submitButton" class="submitArea"></span>
+                <input type="submit" value="Envoyer →" id="submitButton" class="submitArea" name="submit"></span>
             </div>
 
         </form>
@@ -104,7 +101,7 @@
 
 
     <script src="java.js"></script>
-    <!-- Une page Web est lue par le navigateur de façon linéaire, c'est-à-dire qu'il lit d'abord le<head>, puis les éléments de<body>les uns à la suite des autres. Si vous appelez un fichier JavaScript dès le début du chargement de la page, le navigateur va donc charger ce fichier, et si ce dernier est volumineux, le chargement de la page s'en trouvera ralenti. Pour pallier ce problème, il est conseillé de placer les éléments<script>juste avant la fermeture de l’élément<body> -->
+
     </body>
 
 </html>
