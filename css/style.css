@@ -1,7 +1,6 @@
 @font-face {
   font-family: "Montserrat-Black";
-  src:  local("Georgia"),
-  		url("../fonts/montserrat/Montserrat-Black.woff2") format('woff2'),
+  src:  url("../fonts/montserrat/Montserrat-Black.woff2") format('woff2'),
   		url("../fonts/montserrat/Montserrat-Black.woff") format('woff');
   	}
 
@@ -13,8 +12,7 @@
 
 @font-face {
   font-family: "Montserrat-Medium";
-  src:  local("Tahoma"),
-  		url("../fonts/montserrat/Montserrat-Medium.ttf") format("opentype"),
+  src:  url("../fonts/montserrat/Montserrat-Medium.ttf") format("opentype"),
   		url("../fonts/montserrat/Montserrat-Medium.woff2") format('woff2'),
   		url("../fonts/montserrat/Montserrat-Medium.woff") format('woff');
 
@@ -26,7 +24,7 @@
 body
 {
 	background-color: #E6E6E6;
-	font-family: "Arial";
+	font-family: Arial;
 }
 
 footer
@@ -43,10 +41,14 @@ footer td{
 	padding: 0px 10px 0px 0px ; /* marges intérieures : haut droite bas gauche */
 }
 
-
-.semiBold{
-	font-family: "Montserrat-SemiBold";
+input:focus, textarea:focus, select:focus{
+	outline: 0;
 }
+
+textarea {
+   resize: none;
+}
+
 
 .entry, select {
 	background-color: #F7F7F7;
@@ -58,7 +60,6 @@ footer td{
 
  .labelChamp{
  	font-size: 13px;
- 	font-weight: bold;
  	text-shadow: 0px 2px 1px #C3C3C3;
  }
 
@@ -77,15 +78,15 @@ input {
 
 input[type=text], #messageEntry {
 	font-size: 14px;
-	font-family: Tahoma;
+	font-family: "Montserrat-SemiBold",Tahoma;
+	color: grey;
  }
 
  input::placeholder, textarea::placeholder {
 	font-size: 16px;
-	font-family: Arial;
+	font-family: "Montserrat-Semibold", Arial;
 	color: #ACACAC;
 }
-
 
 textarea {
 	background-color: white;
@@ -100,23 +101,34 @@ textarea::placeholder{
 
 
 #catEntry{
-	font-family: Arial;
+	font-family: "Montserrat-Medium", Arial;
+	width: 95%;
 }
 
 
- #nomEntry
- {
- 	width: 100%;
+#nomEntry
+{
+	width: 100%;
+}
+
+#messageEntry{
+	width: 95%;
+}
+.entry input {
+	Line-Height: 25pt;
+	width: 90%;
  }
 
- #nomEntry, #emailEntry, #phoneEntry {
-	Line-Height: 25pt;
- }
+#emailEntry, #phoneEntry, #emailLabel, #phoneLabel, #messageTel, #messageMail{
+	margin-left: 15pt;
+}
 
 #champ_email, #champ_phone 
 {	
 	display: inline-block;
-	width:44%;
+	width:49%;
+	padding-left: 0pt; 
+	padding-right: 0pt;
 }
 
 
