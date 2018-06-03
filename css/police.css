@@ -1,0 +1,71 @@
+@font-face{
+  font-family: "Montserrat-Black";
+  src:  url("../fonts/montserrat/Montserrat-Black.woff2") format('woff2'),
+  		url("../fonts/montserrat/Montserrat-Black.woff") format('woff');
+}
+
+@font-face{
+  font-family: "Montserrat-SemiBold";
+  src: 	url("../fonts/montserrat/Montserrat-Semibold.woff2") format('woff2'),
+  		url("../fonts/montserrat/Montserrat-Semibold.woff") format('woff'); 
+}
+
+@font-face{
+  font-family: "Montserrat-Medium";
+  src:  url("../fonts/montserrat/Montserrat-Medium.ttf") format("opentype"),
+  		url("../fonts/montserrat/Montserrat-Medium.woff2") format('woff2'),
+  		url("../fonts/montserrat/Montserrat-Medium.woff") format('woff');
+
+}
+
+body{
+  background-color: #E6E6E6;
+  font-family: Arial;
+}
+
+footer{
+  font-size: 8px;
+  text-align: center;
+}
+
+
+input::placeholder, textarea::placeholder{
+  font-size: 16px;
+  font-family: "Montserrat-Semibold", Arial;
+  color: #ACACAC;
+}
+
+input[type=text], #messageEntry{
+  font-size: 14px;
+  font-family: "Montserrat-SemiBold",Tahoma;
+  color: grey;
+}
+
+#catEntry{
+  font-family: "Montserrat-Medium", Arial;
+}
+
+.labelChamp{
+  font-size: 13px;
+  text-shadow: 0px 2px 1px #C3C3C3;
+}
+
+.hiddenMessage{
+  font-size: 14px;
+}
+
+.OK, .NOTOK{
+  font-size: 14px;
+}
+
+.OK{
+  color: green;
+}
+
+.NOTOK, .hiddenMessage{
+  color: red;
+}
+
+#messageCat{
+  color: red;
+}

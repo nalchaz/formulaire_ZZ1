@@ -1,0 +1,107 @@
+footer table{
+	margin: auto;
+}
+
+footer td{
+	padding: 0px 10px 0px 0px ; /* marges intérieures : haut droite bas gauche */
+}
+
+input:focus, textarea:focus, select:focus{
+	outline: 0;
+}
+
+textarea {
+   resize: none;
+}
+
+input {
+	border: hidden;
+	background-color: #F7F7F7;
+}
+
+textarea{
+	background-color: white;
+	padding: 15px;
+	border: none;
+	margin: 10px 0px 15px 0px;
+}
+
+textarea::placeholder{
+	width: 100%;
+}
+
+.entry, select {
+	background-color: #F7F7F7;
+	padding: 15px;
+	border: 1px solid #E6E6E6;
+	border-radius:15px;
+	margin: 10px 0px 15px 0px;
+}
+
+#mainContainer{
+	width: 65%; 	/* largeur du bloc à 50% de la résolution de l'écran */
+	margin: auto;   /* marge exterieure auto ie bloc centré */
+	padding: 20px 40px 60px 40px ; /* marges intérieures : haut droite bas gauche */
+	background-color: white;
+	border-radius: 10px;
+}
+
+.entry input {
+	Line-Height: 25pt;
+	width: 90%;
+ }
+
+#catEntry{
+	width: 95%;
+}
+
+#nomEntry{
+	width: 100%;
+}
+
+#messageEntry{
+	width: 95%;
+}
+
+#emailEntry, #phoneEntry, #emailLabel, #phoneLabel, #messageTel, #messageMail{
+	margin-left: 15pt;
+}
+
+#champ_email, #champ_phone 
+{	
+	display: inline-block;
+	width:49%;
+	padding-left: 0pt; 
+	padding-right: 0pt;
+}
+
+#champ_phone{
+	float: right;
+}
+
+#champ_message{
+	background-color: white;
+	padding: 15px;
+	border: 1px solid #E6E6E6;
+	margin: 10px 0px 15px 0px;
+	border-radius:15px;
+}
+
+.submitArea{
+	border: none;
+	padding: 15px 70px 15px 70px;
+	background-color: #333333;
+	color : white;
+	border-radius: 20px;
+	width : 100%;
+
+	box-shadow: 0 200px 100px -100px #333333 inset; /* On joue sur l'ombre pour le dégradé au survol */
+    transition: box-shadow 0.4s;
+}
+
+.submitArea:hover{
+	background-color: #00AD5F;
+	box-shadow: 0 200px 100px -100px #00AD5F inset;
+}
+
+

@@ -1,21 +1,25 @@
 <html>
+
     <head>
-    	<!-- En-tête de la page -->
+        <!-- En-tête de la page -->
         <meta charset="utf-8" />
-        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
+        <link rel="stylesheet" type="text/css" href="../css/police.css">
         <title> Contact </title>
+
     </head>
+
 
     <body>
         <div id="mainContainer">
-        	<center><img src="../images/NousContacter.png" alt="Nous contacter"/></center>
+            <center><img src="../images/NousContacter.png" alt="Nous contacter"/></center>
             <p class="hiddenMessage" id="messageFormulaire">Des champs sont invalides</p>
 
         <form id="formulaire" onsubmit="return Envoi()" method="post" action="envoi.php">
             <!-- Nom -->
             <div class="entry">
                 <span id="nomLabel" class="labelChamp">NOM</span>
-                <input class="semiBold" id="nomEntry" type="text" placeholder="Entrez votre nom" size="30" onblur="checkNom()" name="Nom">
+                <input name="Nom" id="nomEntry" type="text" placeholder="Entrez votre nom" size="30" onblur="checkNom()" onkeydown="editionNom()">
                 <div class="hiddenMessage" id="messageNom"> 
                 Un nom doit faire plus de 2 caractères et ne contient que des lettres
                 </div>
@@ -26,7 +30,7 @@
             <div class="entry" id="champ_email">
                 <span id="emailLabel" class="labelChamp">E-MAIL</span>
                 <br/>
-                <input class="semiBold" id="emailEntry" type="text" placeholder="Entrez votre e-mail" size="30" onblur="checkMail()" name="Email">
+                <input name="Email" id="emailEntry" type="text" placeholder="Entrez votre e-mail" size="30" onblur="checkMail()" onkeydown="editionMail()">
                 <div class="hiddenMessage" id="messageMail"> 
                 Entrez un e-mail valide 
                 </div>
@@ -36,7 +40,7 @@
             <div class="entry" id="champ_phone">
                 <span id="phoneLabel" class="labelChamp">TELEPHONE</span>
                 <br/>
-                <input class="semiBold" id="phoneEntry" type="text" placeholder="Entrez votre numéro de téléphone" size="50" onblur="checkTel()" name="Telephone">
+                <input name="Telephone" id="phoneEntry" type="text" placeholder="Entrez votre numéro de téléphone" size="50" onblur="checkTel()" onkeydown="editionTel()">
                 <div class="hiddenMessage" id="messageTel"> 
                 Entrez un numéro de téléphone valide 
                 </div>
@@ -47,7 +51,7 @@
             <div class="entry">
                 <span id="catLabel" class="labelChamp">CATEGORIE SOCIOPROFESSIONNELLE</span>
                 <br/>
-                <select class="semiBold" id="catEntry" onchange="checkCat()" name="Categorie">
+                <select name="Categorie" id="catEntry" onchange="checkCat()">
                     <option value="0">Sélectionnez le groupe auquel vous appartenez</option>
                     <option value="1">1. Agriculteurs exploitants</option>
                     <option value="2">2. Artisans, commerçants, chefs d'entreprises</option>
@@ -68,15 +72,15 @@
             <div id ="champ_message">
                 <span id="messageLabel" class="labelChamp">MESSAGE</span>
                 <br/>
-                <textarea class="semiBold" id="messageEntry" cols="100" rows="2" placeholder="Tapez votre message ici... !" onkeyup="checkMessage()" name="Message"></textarea>
+                <textarea name="Message" id="messageEntry" cols="100" rows="2" placeholder="Tapez votre message ici..." onfocusout="checkMessage()"></textarea>
                 <div class="hiddenMessage" id="messageMessage"> 
-                Votre message doit contenir entre 50 et 1200 caractères
+                Votre message doit contenir entre 20 et 1200 caractères
                 </div>
             </div>
 
             <!-- Button -->
             <div class="submitArea2">
-                <input type="submit" value="Envoyer →" id="submitButton" class="submitArea" name="submit"></span>
+                <input name="submit" type="submit" value="Envoyer →" id="submitButton" class="submitArea">
             </div>
 
         </form>
@@ -100,8 +104,8 @@
         </footer>
 
 
-    <script src="java.js"></script>
-
+    <script src="../js/main.js"></script>
+    <!-- Une page Web est lue par le navigateur de façon linéaire, c'est-à-dire qu'il lit d'abord le<head>, puis les éléments de<body>les uns à la suite des autres. Si vous appelez un fichier JavaScript dès le début du chargement de la page, le navigateur va donc charger ce fichier, et si ce dernier est volumineux, le chargement de la page s'en trouvera ralenti. Pour pallier ce problème, il est conseillé de placer les éléments<script>juste avant la fermeture de l’élément<body> -->
     </body>
 
 </html>
