@@ -19,6 +19,10 @@ function affiche(elementStyle){
     elementStyle.display = "";
 }
 
+function editionNom() {
+    var nomInput = document.getElementById('nomEntry');
+    nomInput.className = 'edition';
+}
 
 function checkNom() {
     var nomInput = document.getElementById('nomEntry'), //L'input
@@ -35,6 +39,12 @@ function checkNom() {
     return 0;
 }
 
+function editionMail() {
+    var mailInput = document.getElementById('emailEntry');
+    mailInput.className = 'edition';
+}
+
+
 function checkMail() {
     var mailInput = document.getElementById('emailEntry'), //L'input
         mailMessageStyle = document.getElementById('messageMail').style;//Le style du message
@@ -49,6 +59,12 @@ function checkMail() {
     }
     return 0;
 }
+
+function editionTel() {
+    var telInput = document.getElementById('phoneEntry');
+    telInput.className = 'edition';
+}
+
 
 function checkTel() {
     var telInput = document.getElementById('phoneEntry'), //L'input
@@ -71,8 +87,8 @@ function checkMessage() {
         messageMessageStyle = document.getElementById('messageMessage').style, //Le style du message
         Longueur = messageInput.value.length; //longueur du texte tapé
 
-    if (Longueur >= 25 && Longueur <= 1200) {
-        messageInput.className = 'OK'; // changement de class
+    if (Longueur >= 20 && Longueur <= 1200) {
+        messageInput.className = ''; // changement de class
         cache(messageMessageStyle); // on masque le message de correction
         return 1;
     } else {
@@ -98,7 +114,7 @@ function checkCat() {
 
 function Envoi(){
 
-    if(checkCat() == 1 && checkNom() == 1 && checkMail()  == 1 && checkTel() == 1 && checkMessage() == 1){
+    if(checkCat() == 1 & checkNom() == 1 & checkMail()  == 1 & checkTel() == 1 & checkMessage() == 1){
         cache(messageFormulaireStyle);
         alert('Formulaire bien rempli');
         return true;

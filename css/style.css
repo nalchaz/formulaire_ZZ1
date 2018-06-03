@@ -43,6 +43,13 @@ footer td{
 	padding: 0px 10px 0px 0px ; /* marges intérieures : haut droite bas gauche */
 }
 
+input:focus, textarea:focus, select:focus{
+	outline: 0;
+}
+
+textarea {
+   resize: none;
+}
 
 .semiBold{
 	font-family: "Montserrat-SemiBold";
@@ -101,22 +108,33 @@ textarea::placeholder{
 
 #catEntry{
 	font-family: Arial;
+	width: 95%;
 }
 
 
- #nomEntry
- {
- 	width: 100%;
+#nomEntry
+{
+	width: 100%;
+}
+
+#messageEntry{
+	width: 95%;
+}
+.entry input {
+	Line-Height: 25pt;
+	width: 90%;
  }
 
- #nomEntry, #emailEntry, #phoneEntry {
-	Line-Height: 25pt;
- }
+#emailEntry, #phoneEntry, #emailLabel, #phoneLabel, #messageTel, #messageMail{
+	margin-left: 15pt;
+}
 
 #champ_email, #champ_phone 
 {	
 	display: inline-block;
-	width:44%;
+	width:49%;
+	padding-left: 0pt; 
+	padding-right: 0pt;
 }
 
 
