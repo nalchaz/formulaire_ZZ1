@@ -72,7 +72,7 @@ function checkTel() {
     var telInput = document.getElementById('phoneEntry'), //L'input
         telMessageStyle = document.getElementById('messageTel').style;//Le style du message
 
-    if (/^0[1-68]([-. ]?[0-9]{2}){4}$/.test(telInput.value)) {
+    if (/^0[1-8]([-. ]?[0-9]{2}){4}$/.test(telInput.value)) {
         telInput.className = 'OK'; // changement de class
         cache(telMessageStyle); // on masque le message de correction
         return 1;
