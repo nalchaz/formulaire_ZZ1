@@ -115,13 +115,13 @@ function checkCat() {
 }
 
 function Envoi(){
+ var messageFormulaireStyle = document.getElementById('messageFormulaire').style;
 
     if(checkCat() == 1 & checkNom() == 1 & checkMail()  == 1 & checkTel() == 1 & checkMessage() == 1){
         cache(messageFormulaireStyle);
         alert('Formulaire bien rempli');
         return true;
     }else{
-        var messageFormulaireStyle = document.getElementById('messageFormulaire').style;
         affiche(messageFormulaireStyle);
         return false;
     }

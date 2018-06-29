@@ -6,9 +6,7 @@
         <link rel="stylesheet" type="text/css" href="../css/main.css">
         <link rel="stylesheet" type="text/css" href="../css/police.css">
         <title> Contact </title>
-
     </head>
-
 
     <body>
         <div id="mainContainer">
@@ -19,7 +17,8 @@
             <!-- Nom -->
             <div class="entry">
                 <span id="nomLabel" class="labelChamp">NOM</span>
-                <input name="Nom" id="nomEntry" type="text" placeholder="Entrez votre nom" size="30" onblur="checkNom()" onkeydown="editionNom()">
+                <input name="Nom" id="nomEntry" type="text" placeholder="Entrez votre nom" size="30" 
+                    onblur="checkNom()" onkeydown="editionNom()">
                 <div class="hiddenMessage" id="messageNom"> 
                 Un nom doit faire plus de 2 caractères et ne contient que des lettres
                 </div>
@@ -30,7 +29,8 @@
             <div class="entry" id="champ_email">
                 <span id="emailLabel" class="labelChamp">E-MAIL</span>
                 <br/>
-                <input name="Email" id="emailEntry" type="text" placeholder="Entrez votre e-mail" size="30" onblur="checkMail()" onkeydown="editionMail()">
+                <input name="Email" id="emailEntry" type="text" placeholder="Entrez votre e-mail" size="30" 
+                        onblur="checkMail()" onkeydown="editionMail()">
                 <div class="hiddenMessage" id="messageMail"> 
                 Entrez un e-mail valide 
                 </div>
@@ -40,7 +40,8 @@
             <div class="entry" id="champ_phone">
                 <span id="phoneLabel" class="labelChamp">TELEPHONE</span>
                 <br/>
-                <input name="Telephone" id="phoneEntry" type="text" placeholder="Entrez votre numéro de téléphone" size="50" onblur="checkTel()" onkeydown="editionTel()">
+                <input name="Telephone" id="phoneEntry" type="text" placeholder="Entrez votre numéro de téléphone" 
+                        size="50" onblur="checkTel()" onkeydown="editionTel()">
                 <div class="hiddenMessage" id="messageTel"> 
                 Entrez un numéro de téléphone valide 
                 </div>
@@ -72,7 +73,7 @@
             <div id ="champ_message">
                 <span id="messageLabel" class="labelChamp">MESSAGE</span>
                 <br/>
-                <textarea name="Message" id="messageEntry" cols="100" rows="2" placeholder="Tapez votre message ici..." onfocusout="checkMessage()"></textarea>
+                <textarea name="Message" id="messageEntry" cols="100" rows="2" placeholder="Tapez votre message ici..." onblur="checkMessage()"></textarea>
                 <div class="hiddenMessage" id="messageMessage"> 
                 Votre message doit contenir entre 20 et 1200 caractères
                 </div>
