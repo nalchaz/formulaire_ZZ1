@@ -1,3 +1,13 @@
+// Fonction qui masque l'élément
+function cache(elementStyle){
+    elementStyle.display = "none" ;
+}
+
+// Fonction qui affiche l'élément
+function affiche(elementStyle){
+    elementStyle.display = "";
+}
+
 // Fonction de désactivation de l'affichage des messages de correction
 // ("hiddenMessage" class)
 function desactivHidden() {
@@ -6,18 +16,10 @@ function desactivHidden() {
         hiddenMessageLength = hiddenMessage.length;
 
     for (var i = 0; i < hiddenMessageLength; i++) {
-        hiddenMessage[i].style.display = 'none';
-	}
+        cache(hiddenMessage[i].style);
+    }
 }
 
-
-function cache(elementStyle){
-    elementStyle.display = "none" ;
-}
-
-function affiche(elementStyle){
-    elementStyle.display = "";
-}
 
 function editionNom() {
     var nomInput = document.getElementById('nomEntry');
@@ -30,7 +32,7 @@ function checkNom() {
 
     if (nomInput.value.length > 2 && /^[A-Za-z]+$/.test(nomInput.value) ) {
         nomInput.className = 'OK'; // changement de class
-        cache(nomMessageStyle); // on masque le message de correction*
+        cache(nomMessageStyle); // on masque le message de correction
         return 1;
     } else {
         nomInput.className = 'messageHidden';
