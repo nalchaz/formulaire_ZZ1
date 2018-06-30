@@ -83,7 +83,6 @@ function checkTel() {
     return 0;
 }
 
-
 function checkMessage() {
     var messageInput = document.getElementById('messageEntry'), //L'input
         messageMessageStyle = document.getElementById('messageMessage').style, //Le style du message
@@ -116,7 +115,6 @@ function checkCat() {
 
 function Envoi(){
  var messageFormulaireStyle = document.getElementById('messageFormulaire').style;
-
     if(checkCat() == 1 & checkNom() == 1 & checkMail()  == 1 & checkTel() == 1 & checkMessage() == 1){
         cache(messageFormulaireStyle);
         alert('Formulaire bien rempli');
@@ -125,7 +123,6 @@ function Envoi(){
         affiche(messageFormulaireStyle);
         return false;
     }
-
 }
 
 desactivHidden();
