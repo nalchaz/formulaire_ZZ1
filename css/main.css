@@ -11,7 +11,7 @@ input:focus, textarea:focus, select:focus{
 }
 
 textarea {
-   resize: none;
+    resize: none;
 }
 
 input {
@@ -39,9 +39,9 @@ textarea::placeholder{
 }
 
 #mainContainer{
-	width: 65%; 	/* largeur du bloc à 50% de la résolution de l'écran */
-	margin: auto;   /* marge exterieure auto ie bloc centré */
-	padding: 20px 40px 60px 40px ; /* marges intérieures : haut droite bas gauche */
+	width: 65%; 	
+	margin: auto;   
+	padding: 20px 40px 60px 40px ; 
 	background-color: white;
 	border-radius: 10px;
 }
@@ -95,13 +95,10 @@ textarea::placeholder{
 	border-radius: 20px;
 	width : 100%;
 
-	box-shadow: 0 200px 100px -100px #333333 inset; /* On joue sur l'ombre pour le dégradé au survol */
-    transition: box-shadow 0.4s;
+    transition: background-color 0.4s;
 }
 
 .submitArea:hover{
 	background-color: #00AD5F;
-	box-shadow: 0 200px 100px -100px #00AD5F inset;
 }
-
 
